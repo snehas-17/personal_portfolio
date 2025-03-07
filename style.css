@@ -104,6 +104,7 @@ nav ul li a:hover::after {
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
+    text-align: center;
     color: #fff;
     transition: background 0.5s;
 }
@@ -508,7 +509,7 @@ nav .fas {
 
     .header-text {
         margin-top: 50%;
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .header-text h1 {
