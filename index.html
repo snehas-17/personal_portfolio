@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneha Singh - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Bubblegum+Sans&family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h1>Sneha</h1>
+            <ul id="sidemenu">
+                <li><a href="#header-container">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+
+    <!-- Flex container to align image and text side by side -->
+    <div class="header-container">
+        <div id="header"></div>
+        <div class="header-text">
+            <h1>Hi, I'm <span>Sneha Singh</span></h1>
+            <p>MS in Computer Science and Engineering (SUNY Buffalo) | <br>BE in Information Technology (TCET) | <br>Former Research Assistant at SUNY Buffalo | <br>Former Staff Consultant at Oracle</p>
+            <a href="images/Sneha Singh_Resume.pdf" download class="btn">Download Resume</a>
+        </div>
+    </div>
+
+    <!-- -----------------about---------------   -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>With a strong foundation in computer science and engineering, complemented by hands-on experience in software development, research, and innovative projects, I am well-equipped for a software developer position. My technical expertise includes programming languages like Python, C#, C++, Java, and SQL, along with proficiency in modern tools and frameworks such as PyTorch, OpenCV, AWS, and Google Cloud.</p>
+                    <div class="tabs-about">
+                        <p class="tab-links active-link" onclick="tabopen('programming')">Programming</p>
+                        <p class="tab-links" onclick="tabopen('dbcloud')">DB/Cloud</p>
+                        <p class="tab-links" onclick="tabopen('aiml')">AI/ML</p>
+                        <p class="tab-links" onclick="tabopen('development')">Development</p>
+                        <p class="tab-links" onclick="tabopen('certifications')">Certifications</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="programming">
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>SQL</li>
+                            <li>C programming</li>
+                            <li>C++ programming</li>
+                            <li>JavaScript</li>
+                            <li>HTML + CSS</li>
+                            <li>R programming</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="dbcloud">
+                        <ul>
+                            <li>MySQL</li>
+                            <li>PL/SQL</li>
+                            <li>MongoDB</li>
+                            <li>Hadoop</li>
+                            <li>PostgreSQL</li>
+                            <li>Amazon Web Services</li>
+                            <li>Google Cloud Platform</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="aiml">
+                        <ul>
+                            <li>PyTorch</li>
+                            <li>Tensorflow</li>
+                            <li>OpenCV</li>
+                            <li>Mediapipe</li>
+                            <li>PySpark</li>
+                            <li>PowerBI</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="development">
+                        <ul>
+                            <li>Flask</li>
+                            <li>REST APIs</li>
+                            <li>SOAP APIs</li>
+                            <li>Docker</li>
+                            <li>Firebase</li>
+                            <li>Unity</li>
+                            <li>Android Studio</li>
+                            <li>Git</li>
+                            <li>Adobe Illustrator</li>
+                            <li>Blender</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certifications">
+                        <ul>
+                            <li>(IBM) Data Analysis with Python</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <img src="images/linkedin.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------education------------ -->
+    <div id="education">
+        <div class="container">
+            <h1 class="subtitle">Education</h1>
+            <div class="education-list">
+                <div>
+                    <i class="fas fa-university"></i>
+                    <h2>University at Buffalo</h2>
+                    <p>Master of Science in Computer Science and Engineering <br>The State University of New York, Buffalo, NY, USA <br>Aug 2023 - Jan 2025 <br>Grade - 3.87</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-university"></i>
+                    <h2>Thakur College of Engineering & Technology</h2>
+                    <p>Bachelor of Engineering in Information Technology <br>University of Mumbai, Mumbai, Maharshtra, India <br>Jul 2016 - May 2020 <br>Grade - 3.83</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------experience---------------- -->
+    <div id="experience">
+        <div class="container">
+            <h1 class="subtitle">Experience</h1>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="content">
+                        <h2>The State University of New York at Buffalo</h2>
+                        <h3>Research Assistant <br>(Sep 2024 – Dec 2024)</h3>
+                        <p>• Designed and executed research on LLM security and hallucination detection using Meta’s Llama-3.2-1B model.</p>
+                        <p>• Engineered adversarial training techniques, reducing hallucination scores by 1.6%.</p>
+                        <p>• Built an anomaly detection pipeline using PyTorch, SentenceTransformers, and Google Custom Search API.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="content">
+                        <h2>Extern</h2>
+                        <h3>Mobalytics Remote Extern <br>(May 2024 – Jun 2024)</h3>
+                        <p>• Familiarize with the vision, mission, and work of Mobalytics.</p>
+                        <p>• Explore a high-level overview of gaming genres that currently exist in the market.</p>
+                        <p>• Choose a game genre and conduct a deep dive analysis into topics like game mechanisms, KPIs, revenue models, and player psychology.</p>
+                        <p>• Engage with particular games to draw firsthand experience of select games within the genre explores.</p>
+                        <p>• Summarize research and make a compelling presentation that highlights the key takeaways and makes recommendations to Mobalytics on market expansion opportunities.</p>
+                    </div>
+                </div>
+    
+                <div class="timeline-item left">
+                    <div class="content">
+                        <h2>Oracle</h2>
+                        <h3>Staff Consultant <br>(Oct 2020 – Jul 2023)</h3>
+                        <p>• Spearheaded 20+ product upgrades and patchset deployments, addressing 95% client-reported issues.</p>
+                        <p>• Engineered and integrated 10+ custom APIs for the Flexcube platform, improving efficiency by 30%.</p>
+                    </div>
+                </div>
+    
+                <div class="timeline-item right">
+                    <div class="content">
+                        <h2>IdeaLite Technologies LLP</h2>
+                        <h3>Graphic Design Intern <br>(Sep 2019 – Jan 2020)</h3>
+                        <p>• Developed graphic design solutions for marketing, enhancing brand visibility using Adobe Creative Suite.</p>
+                        <p>• Created posters, logos, captions, and other graphic content for social media marketing.</p>
+                    </div>
+                </div>
+    
+                <div class="timeline-item left">
+                    <div class="content">
+                        <h2>Ink in Caps Media and Marketing LLP</h2>
+                        <h3>Intern <br>(Dec 2018 – Jan 2019)</h3>
+                        <p>• Prepared Leap Motion-powered scripts for gesture-based interactions in Virtual Reality (VR).</p>
+                        <p>• Integrated Mindwave sensors with Bluetooth modules to detect brainwave signals and control LED lighting dynamically.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <!-- -----------------projects-------------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/asl.png">
+                    <div class="layer">
+                        <h3>Signify: ASL Application</h3>
+                        <p>This an interactive ASL detection system which enables real-time sign language translation using computer vision and deep learning.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/smart_bin.png">
+                    <div class="layer">
+                        <h3>Smart Waste Management</h3>
+                        <p>A waste management system designed for smart cities where smart dustbins transmit level data over cloud via sensors and garbage collection is done based on the optimized shortest route depending on the levels.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------contact---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> sneha.singh17.mum@gmail.com</p>
+                    <p><i class="fas fa-paper-plane"></i> sneharsingh49@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 7165206441</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sneha-17-singh/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/snehas-17"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form id="contact-form">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <p id="response-message" style="color: mediumturquoise; display: none;">Your message has been sent successfully!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function tabopen(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", async function(event) {
+            event.preventDefault(); // Prevent page reload
+
+            const formData = new FormData(this);
+
+            try {
+                const response = await fetch("https://formsubmit.co/ajax/sneharsingh49@gmail.com", {
+                    method: "POST",
+                    body: formData
+                });
+
+                if (response.ok) {
+                    document.getElementById("response-message").style.display = "block"; // Show success message
+                    this.reset(); // Reset form fields
+                } else {
+                    alert("Error submitting the form. Please try again.");
+                }
+            } catch (error) {
+                alert("An error occurred. Please try again.");
+            }
+        });
+    </script>
+</body>
+</html>
